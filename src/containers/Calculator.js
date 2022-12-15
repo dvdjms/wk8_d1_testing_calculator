@@ -95,8 +95,8 @@ function App() {
   // Updated code to include if statement - (David James)
   const divide = (number) => {
     if (number === 0) {
-      setRunningTotal(0);
-      setCalculatedTotal(0);
+      setRunningTotal('Error');
+      setCalculatedTotal("Error");
     }
     else {
 
