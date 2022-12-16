@@ -60,12 +60,12 @@ describe("Calculator", () => {
 
 // 6. Write a test to describe what you'd prefer to happen, and then correct the code to make that test pass (you will 
 //   need to modify the Calculator model to meet this requirement).
-  it('should divide a number by zero and get zero', () => {
+  it('should divide a number by zero and get Error', () => {
     cy.get('#number4').click();
     cy.get('#operator-divide').click();
     cy.get('#number0').click();
     cy.get('#operator-equals').click();
-    cy.get('.display').should('contain', '0')
+    cy.get('.display').should('contain', 'Error')
   })
 
 })
